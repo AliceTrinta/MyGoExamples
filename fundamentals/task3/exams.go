@@ -14,6 +14,7 @@ func main()  {
 			fmt.Println("You get:", getResults(i))
 		default:
 		}
+		time.Sleep(time.Second * 5)
 	}
 }
 
