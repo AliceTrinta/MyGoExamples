@@ -9,15 +9,15 @@ import (
 func main()  {
 	//Integers
 	fmt.Println(1, 2, 1000)
-	fmt.Println("Integer's literal type is:", reflect.TypeOf(32000))
+	fmt.Println("Integer's literal type is:", reflect.TypeOf(-32000))
 
-	//Only positive integers: unit8(byte), unit16, unit32, unit64.
+	//Only positive integers: uint8(byte), uint16, uint32, uint64.
 	var b byte = 255
 	fmt.Println("Byte's type is:", reflect.TypeOf(b))
 
 	//With signal. Can be negative: int8, int16, int32, int64.
 	i1 := math.MinInt64
-	fmt.Println("The max value is:", i1)
+	fmt.Println("The min value is:", i1)
 	fmt.Println("The type of i1 is:", reflect.TypeOf(i1))
 
 	//Runes represents the respective value of a variable on the unicode's table.
