@@ -6,11 +6,11 @@ import (
 )
 
 func main()  {
-	for {
+	for{
 		t := time.Now()
 		switch {
-		case t.Hour() > 10 && t.Hour() < 17:
-			i := 7.0
+		case t.Hour() > 10 && t.Hour() < 20:
+			i := 10.0
 			fmt.Println("You get:", getResults(i))
 		default:
 		}

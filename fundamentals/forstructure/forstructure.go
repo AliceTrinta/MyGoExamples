@@ -13,7 +13,7 @@ func main()  {
 	}
 
 	//Declaring "for" in "while" style.
-	i := 0;
+	i := 0
 	for i < 10{
 		fmt.Println("Second for", i)
 		i++
