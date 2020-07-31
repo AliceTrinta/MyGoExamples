@@ -10,5 +10,4 @@ func main(){
 
 	s1[0] = 7
 	fmt.Println(s1, s2)
-
 }

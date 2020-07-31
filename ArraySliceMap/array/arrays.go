@@ -3,20 +3,20 @@ package main
 import "fmt"
 
 func main(){
-	var notas [3] float64
-	fmt.Println(notas)
+	var result [3] float64
+	fmt.Println(result)
 
-	notas[0], notas[1], notas[2] = 7.0, 1.2, 5.0
-	fmt.Println(notas)
+	result[0], result[1], result[2] = 7.0, 1.2, 5.0
+	fmt.Println(result)
 
 	total:=0.0
 
-	for i:=0; i<len(notas); i++{
-		total=+notas[i]
+	for i:=0; i<len(result); i++{
+		total=+result[i]
 	}
 
-	media := total/float64(len(notas))
+	avarage := total/float64(len(result))
 
-	fmt.Printf("%2.f", media)
+	fmt.Printf("%2.f", avarage)
 
 }

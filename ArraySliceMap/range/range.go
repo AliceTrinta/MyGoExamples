@@ -3,14 +3,14 @@ package main
 import "fmt"
 
 func main()  {
-	numeros:=[...]int{1,2,3,4,5} // counts automatically
+	numbers:=[...]int{1,2,3,4,5} // counts automatically
 
-	for i, numero := range numeros{
-		fmt.Println(i, numero)
+	for i, number := range numbers{
+		fmt.Println(i, number)
 	}
 
-	for _, numero := range numeros{
-		fmt.Println(numero)
+	for _, number := range numbers{
+		fmt.Println(number)
 	}
 
 }
