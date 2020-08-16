@@ -1,0 +1,26 @@
+Concurrency Vs. Parallelism
+
+Parallelism = multiple tasks being executed at the same time, by different
+processors.
+Concurrency = multiple tasks being merged, giving the impression of a parallelism
+but is just  some kind of administration. Can occur in only one processor.
+
+Parallelism is more exhaustive than concurrency. require much more from the SO and the hardware.
+
+Sometimes, having multiple cores working at the same time can make your work
+slower. Be careful when managing then.
+
+Go is a concurrency language, this means that go use your processor
+in a smartest way, staggering your tasks. Parallelism is a consequence
+of that once you can administrate your tasks as well.
+
+Having concurrency in your system enable to work with parallelism when
+the system evaluate that this can be useful.
+
+It's possible concurrency be better than parallelism in fact that divide a task
+in multiple processors can cause an over-head as a result of the extra effort to
+synchronize information and analyse them together after all the processing.
+
+You have to structure your system to extract the best from the concurrency in go.
+Composition of processes (typically functions) that execute in a independent way.
+
