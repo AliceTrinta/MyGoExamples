@@ -1,0 +1,6 @@
+In go, you can see how much of your code has been tested.
+Go to the package of your test, open the terminal
+and enter with: go test -cover
+To generate a test resume about the code, enter with: go test -coverprofile=result.out
+To have details about a test resume, enter with: go tool cover -func=result.out
+To see in a visual way by the an HTML archive, enter with: go tool cover -html=result.out

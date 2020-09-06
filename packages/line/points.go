@@ -2,16 +2,18 @@ package main
 
 import "math"
 
-//When the first letter is uppercase, it's public
-//under and outside packages.
-//You can't have multiple functions with the same name
-//under the same package.
-//The archive it's not really important, what matters is the package.
-//When the first letter is downcase, it's private to only the package
+//As we already know, create a package called main allows us create the main function.
+//About visibility:
+//When the first letter is uppercase, it's public under and outside packages.
+//When the first letter is downcase, it's private, can be accessed only under it package.
 //For example...
 //Public - to declare something public, uppercase in first letter.
 //private or _private - to declare something private, downcase or _ in first letter.
-//Every public declarations have to have a comment to identify.
+//Important to know:
+//Visibility exists only under the package, doesn't matter for the archives.
+//It's recommended that every public declarations have a comment to identify.
+//You can't have multiple functions with the same name under the same package.
+//The archive it's not really important, what matters is the package.
 
 //Represents a point in a cartesian plan.
 type Point struct {
